@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="EmphysemaSeg"
+version="0.1.0"
+requires-python=">=3.7"
+authors = [{name="Thomas Li", email="thomas.z.li@vanderbilt.edu"},]
+description = "Lobe segmentation and emphysema quantification for chest CT"
+dependencies = [                                                
+    "matplotlib==3.6.2",                                             
+    "monai==1.0.1",                                                                                                                                                                                                                                           
+    "nibabel==4.0.2",                                                                                                                       
+    "numpy==1.23.4",                                                                                                               
+    "PyYAML==6.0",
+    "scikit-image==0.19.3",
+    "scipy==1.9.3",
+    "torch==1.13.0",
+    "tqdm==4.64.1",
+]
+
+[project.urls]
+"Homepage"="https://github.com/MASILab/EmphysemaSeg"
+
+[tool.setuptools.packages]
+find = {}
+

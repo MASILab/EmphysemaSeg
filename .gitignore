@@ -1,0 +1,9 @@
+env/
+data/
+clip/
+seg/
+build/
+__pycache__/
+.vscode
+config.YAML
+EmphysemaSeg.egg-info
