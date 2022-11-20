@@ -28,7 +28,7 @@ from monai.transforms import (
 	ScaleIntensityRanged,
 	EnsureTyped
 )
-from utils import clip_mask_overlay, nearest_label_filling, get_largest_cc, BodyMaskd
+from EmphysemaSeg.utils import clip_mask_overlay, nearest_label_filling, get_largest_cc, BodyMaskd
 
 
 def infer(config, emp_seg=False, vis=False):
@@ -91,7 +91,6 @@ def infer(config, emp_seg=False, vis=False):
 					# labal map encodes emphysema as 7
 					label_map = np.where(emp, 7, lobe_map)
 				for plane in ["coronal", "axial", "sagittal"]:
-					print(label_map.shape)
 					clip_mask_overlay(raw_nii.get_fdata(), label_map,
 									  os.path.join(config["clip_dir"], f"{fname}_{plane}.png"),
 									  clip_plane=plane,

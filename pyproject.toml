@@ -23,6 +23,9 @@ dependencies = [
 [project.urls]
 "Homepage"="https://github.com/MASILab/EmphysemaSeg"
 
+[project.scripts]
+EmphysemaSeg = "EmphysemaSeg.main:main"
+
 [tool.setuptools.packages]
 find = {}
 
