@@ -11,7 +11,8 @@ Thomas Z. Li, Ho Hin Lee, Kaiwen Xu, Riqiang Gao, Benoit M. Dawant, Fabien Maldo
 ## Usage with python
 1. Download model weights from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7339893.svg)](https://doi.org/10.5281/zenodo.7339893)
 2. Populate `config.YAML` with location of directories and model weights. See `example_config.YAML` for more details.
-3. Running `EmphysemaSeg --config path_to_config.YAML` will only do lobe segmentation. Add `--emp` for emphysema segmentation and `--vis` for visualization.
+3. `python3 -m pip install --upgrade pip \ pip install EmphysemaSeg`
+4. Running `EmphysemaSeg --config path_to_config.YAML` will only do lobe segmentation. Add `--emp` for emphysema segmentation and `--vis` for visualization.
 
 ## Limitations and Resource requirements
 * This tool is designed for chest CTs with voxel dimensions in th range of 0.5-1mm x 0.5-1mm x 0.5-1.25mm (coronal x sagittal x axial). 
