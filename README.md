@@ -1,6 +1,7 @@
 # EmphysemaSeg
-Automatic lobe segmentation and emphysema quantification. Input is a chest CT (.nii.gz) and outputs label maps for lobe segmentations and emphysema approximated as low attenuation volume (<-950HU). Visualization is also provided
+Automatic lobe segmentation and emphysema quantification. Input is a chest CT (.nii.gz) and outputs label maps for lobe segmentations and emphysema approximated as low attenuation volume (<-950HU). The tool also provides a visualization of segmentation results.
 
+![vis](vis.png)
 
 ## Citation
 Please cite the following if you find this tool useful!

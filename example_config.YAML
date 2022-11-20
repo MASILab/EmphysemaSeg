@@ -1,0 +1,8 @@
+
+data_dir: "./data/nifti" # all files in this dir with a *.nii.gz format will be processed
+seg_dir: "./seg" # label map outputs. two channel if --emp was specified
+clip_dir: "./clip" # visualizations of segmentation results if --vis was specified
+model_path: "./model.pth"
+pix_dim: !!python/tuple [1, 1, 1] 
+window: !!python/tuple [-1024, 600]
+num_workers: 2
